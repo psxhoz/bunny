@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExtHang3r</title>
-    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Blobby-Boi/ExtHang3r/refs/heads/main/favicon.png">
+    <title>Psxhoz</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
     <style>
       body {
         font-family: 'Varela Round', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f8f9fa;
+        background-color: #7e09df;
         color: #333;
       }
 
@@ -27,9 +26,9 @@
       }
 
       .logo {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
+        width: 150px;
+        height: 150px;
+        margin-right: 30px;
       }
 
       .container {
@@ -156,11 +155,11 @@
   </head>
   <body>
     <header>
-      <img src="https://raw.githubusercontent.com/Blobby-Boi/ExtHang3r/refs/heads/main/favicon.png" alt="Logo" class="logo">
-      <h1>ExtHang3r</h1>
+      <img src="https://raw.githubusercontent.com/psxhoz/Apple/main/weow.gif" alt="Logo" class="logo">
+      <h1>METHOD</h1>
     </header>
     <div class="container">
-      <p>ExtHang3r is an exploit that allows ChromeOS users to kill managed extensions after the LTMEAT patch. It remains unpatched in all new ChromeOS versions as of February 2025.</p>
+      <p>this is THE method.</p>
       <label for="iframeSelect" id="labelForIframeSelect">Select extension:</label>
       <select id="iframeSelect"></select>
       <label for="iframeCountSlider" id="labelForIframeSlider" style="margin-top: 20px;">The slider below changes the amount of iframes that will be created. Try it with the default first, and if the extension comes back after a few minutes increase it and try again. Tip: If your computer crashes or freezes for more than 2 minutes, you should definitely decrease the amount of iframes.</label>
@@ -324,7 +323,7 @@
         const extensionId = selectedSrc.substring(selectedSrc.indexOf("//") + 2, selectedSrc.indexOf("/", selectedSrc.indexOf("//") + 2));
         const killExtensionText = document.getElementById("killExtensionText");
         document.getElementById("killButton").style.display = "none";
-        killExtensionText.innerHTML = "Make sure to keep this tab open. Then open  <strong> chrome: //extensions/?id=" + extensionId + "</strong> and flip the switch called \"Allow access to file URLs\" twice. The extension was successfully killed! Now you can close that tab as well as this one. If you want to restore the extension, flip the allow access to file URLs switch again.";
+        killExtensionText.innerHTML = "Make sure to keep this tab open. Then open  <strong> chrome://extensions/?id=" + extensionId + "</strong> and flip the switch called \"Allow access to file URLs\" twice. The extension was successfully killed! Now you can close that tab as well as this one. If you want to restore the extension, flip the allow access to file URLs switch again.";
         window.location.href = selectedSrc;
       }
     </script>
